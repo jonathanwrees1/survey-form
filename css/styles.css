@@ -84,9 +84,10 @@ textarea{
 }
 
 button{
-    max-width:100px;
+    width:100px;
     height:50px;
-    font-size:large;
+    font-size:22px;
+    padding:1px auto;
     font-family: inherit;
     border: 1px solid ;
     border-radius:.25rem;
