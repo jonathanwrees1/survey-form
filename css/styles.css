@@ -175,7 +175,10 @@ textarea{
 }
 
 @media (max-width: 400px) {
-  .container{font-size: 75%;
+  
+  .content{
+    font-size:75%;
   }
-  .form-group{font-size: 75%;}
+  
+  
 }
