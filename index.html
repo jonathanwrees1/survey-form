@@ -16,131 +16,150 @@
   <body>
     <main id="main">
       <div class="container">
-        <h1 id="title">The Uptown Liquor Survey</h1>
+        <div class="content">
+          <h1 id="title">The Uptown Liquor Survey</h1>
 
-        <h2 id="description">
-          We want to know what you think....about your favorite drink.
-        </h2>
+          <h2 id="description">
+            We want to know what you think....about your favorite drink.
+          </h2>
 
-        <form id="survey-form">
-          <div class="form-group">
-            <label id="name-label" class="labels" for="name">Name:</label>
-            <input
-              id="name"
-              class="form-control"
-              type="text"
-              placeholder="Enter name"
-              required
-            />
-          </div>
+          <form id="survey-form">
+            <div class="about-you">
+              <div class="form-group">
+                <label id="name-label" class="labels" for="name">Name:</label>
+                <input
+                  id="name"
+                  class="form-control"
+                  type="text"
+                  placeholder="Enter name"
+                  required
+                />
+              </div>
 
-          <div class="form-group">
-            <label id="email-label" class="labels" for="email">Email:</label>
-            <input
-              id="email"
-              class="form-control"
-              type="email"
-              placeholder="Enter email"
-              required
-            />
-          </div>
+              <div class="form-group">
+                <label id="email-label" class="labels" for="email"
+                  >Email:</label
+                >
+                <input
+                  id="email"
+                  class="form-control"
+                  type="email"
+                  placeholder="Enter email"
+                  required
+                />
+              </div>
 
-          <div class="form-group">
-            <label id="number-label" class="labels" for="number">Age:</label>
-            <input
-              id="number"
-              class="form-control"
-              type="number"
-              min="21"
-              max="99"
-              placeholder="Enter age"
-              required
-            />
-          </div>
+              <div class="form-group">
+                <label id="number-label" class="labels" for="number"
+                  >Age:</label
+                >
+                <input
+                  id="number"
+                  class="form-control"
+                  type="number"
+                  min="21"
+                  max="99"
+                  placeholder="Enter age"
+                  required
+                />
+              </div>
 
-          <div class="form-group">
-            <label class="labels">Where Are you From?</label>
-            <select id="dropdown" class="form-control">
-              <option disabled selected value>Select One</option>
-              <option value="americas">Americas</option>
-              <option value="asia">Asia</option>
-              <option value="europe">Europe</option>
-              <option value="australia">Australia</option>
-            </select>
-          </div>
+              <div class="form-group">
+                <label class="labels">Where Are you From?</label>
+                <select id="dropdown" class="form-control">
+                  <option disabled selected value>Select One</option>
+                  <option value="americas">Americas</option>
+                  <option value="asia">Asia</option>
+                  <option value="europe">Europe</option>
+                  <option value="australia">Australia</option>
+                </select>
+              </div>
+            </div>
+            <div class="form-group">
+              <p class="form-group-heading">Which would you prefer?</p>
 
-          <div class="form-group">
-            <p class="form-group-heading">Which would you prefer?</p>
+              <label>
+                <input
+                  name="select-preference"
+                  class="input-radio"
+                  value="wine"
+                  type="radio"
+                  checked
+                />Wine</label
+              >
+              <label>
+                <input
+                  name="select-preference"
+                  class="input-radio"
+                  value="beer"
+                  type="radio"
+                />Beer</label
+              >
+              <label>
+                <input
+                  name="select-preference"
+                  class="input-radio"
+                  value="spirits"
+                  type="radio"
+                />Spirits</label
+              >
+            </div>
+            <div class="form-group">
+              <p class="form-group-heading">
+                If you enjoy spirits, please select your favorites.
+              </p>
+              <label
+                ><input
+                  class="input-checkbox"
+                  type="checkbox"
+                  value="whiskey"
+                />
+                Whiskey</label
+              >
+              <label
+                ><input class="input-checkbox" type="checkbox" value="scotch" />
+                Scotch</label
+              >
+              <label
+                ><input
+                  class="input-checkbox"
+                  type="checkbox"
+                  value="bourbon"
+                />
+                Bourbon</label
+              >
+              <label
+                ><input class="input-checkbox" type="checkbox" value="vodka" />
+                Vodka</label
+              >
+              <label
+                ><input class="input-checkbox" type="checkbox" value="gin" />
+                Gin</label
+              >
+              <label
+                ><input
+                  class="input-checkbox"
+                  type="checkbox"
+                  value="tequila"
+                />
+                Tequila</label
+              >
+              <label
+                ><input class="input-checkbox" type="checkbox" value="rum" />
+                Rum</label
+              >
+            </div>
 
-            <label>
-              <input
-                name="select-preference"
-                class="input-radio"
-                value="wine"
-                type="radio"
-                checked
-              />Wine</label
-            >
-            <label>
-              <input
-                name="select-preference"
-                class="input-radio"
-                value="beer"
-                type="radio"
-              />Beer</label
-            >
-            <label>
-              <input
-                name="select-preference"
-                class="input-radio"
-                value="spirits"
-                type="radio"
-              />Spirits</label
-            >
-          </div>
-          <div class="form-group">
-            <p class="form-group-heading">
-              If you enjoy spirits, please select your favorites.
-            </p>
-            <label
-              ><input class="input-checkbox" type="checkbox" value="whiskey" />
-              Whiskey</label
-            >
-            <label
-              ><input class="input-checkbox" type="checkbox" value="scotch" />
-              Scotch</label
-            >
-            <label
-              ><input class="input-checkbox" type="checkbox" value="bourbon" />
-              Bourbon</label
-            >
-            <label
-              ><input class="input-checkbox" type="checkbox" value="vodka" />
-              Vodka</label
-            >
-            <label
-              ><input class="input-checkbox" type="checkbox" value="gin" />
-              Gin</label
-            >
-            <label
-              ><input class="input-checkbox" type="checkbox" value="tequila" />
-              Tequila</label
-            >
-            <label
-              ><input class="input-checkbox" type="checkbox" value="rum" />
-              Rum</label
-            >
-          </div>
+            <div class="form-group">
+              <p class="form-group-heading">Any additional comments?</p>
+              <textarea></textarea>
+            </div>
 
-          <div class="form-group">
-            <p class="form-group-heading">Any additional comments?</p>
-            <textarea></textarea>
-          </div>
-
-          <div class="form-group-button">
-            <button id="submit" type="submit">Submit</button>
-          </div>
-        </form>
+            <div class="form-group-button">
+              <button id="submit" type="submit">Submit</button>
+            </div>
+          </form>
+        </div>
       </div>
     </main>
   </body>

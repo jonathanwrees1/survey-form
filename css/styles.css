@@ -2,8 +2,10 @@
   box-sizing: border-box;
   font-family:import url('https://fonts.googleapis.com/css2?family=Italiana&display=swap');
   font-family: 'Italiana', serif;
-  text-transform: capitalize;
+  letter-spacing: .2em;
+  text-transform: uppercase;
   color:lightgray;
+  line-height: 1.5em;
 }
 
 body{
@@ -15,7 +17,7 @@ body{
 #main {
 max-width:100%;
   
-  background-color: rgba(0,0,0,.7);
+  background-color: rgba(0,0,0,.3);
   
   background-image: url(../images/alcohol.jpg);
   background-size: cover;
@@ -30,8 +32,17 @@ max-width:100%;
 .container{
   padding:20px;
   font-size: 18px;
+  
+  
 }
 
+.content{
+  background-color: darkcyan;
+  max-width: fit-content;
+  margin:0 auto;
+  border-radius: 15px;
+  opacity:93%;
+}
 
 #title {
   max-width:600px;
@@ -39,14 +50,14 @@ max-width:100%;
   text-transform: uppercase;
   border-bottom:solid 1px darkgray;
   text-align: center;
-  padding: 40px 0;
+  padding: 1em .5em;
   margin:0 auto;
 }
 
 #description {
   text-align: center;
   padding: 20px ;
-  margin: 100px auto;
+  margin: 3em auto;
   max-width: 750px;
   
 }
@@ -66,6 +77,11 @@ max-width:100%;
   height: auto;
   padding: 0 20px;
   border-radius:5px;
+  font-size: 20px;
+  
+}
+.about-you{
+  margin-bottom:2em;
 }
 
 .form-group {
@@ -104,7 +120,8 @@ max-width:100%;
 
 label{
     display:flex;
-    margin-bottom: 0.5rem
+    margin-bottom: 0.5rem;
+    align-items: center;
 }
 
 
@@ -153,4 +170,12 @@ button:active{
     opacity:50%;
 }
 
+textarea{
+  text-transform: none;
+}
 
+@media (max-width: 400px) {
+  .container{font-size: 75%;
+  }
+  .form-group{font-size: 75%;}
+}
