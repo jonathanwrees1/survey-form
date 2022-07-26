@@ -1,11 +1,14 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap');
 *{
   box-sizing: border-box;
-  font-family:import url('https://fonts.googleapis.com/css2?family=Italiana&display=swap');
-  font-family: 'Italiana', serif;
+  font-family: 'Libre Baskerville', serif;
   letter-spacing: .2em;
   text-transform: uppercase;
   color:lightgray;
   line-height: 1.5em;
+  
+  
 }
 
 body{
@@ -17,7 +20,7 @@ body{
 #main {
 max-width:100%;
   
-  background-color: rgba(0,0,0,.3);
+  background-color: rgba(0,0,0,.65);
   
   background-image: url(../images/alcohol.jpg);
   background-size: cover;
@@ -31,18 +34,12 @@ max-width:100%;
 }
 .container{
   padding:20px;
-  font-size: 18px;
+  
   
   
 }
 
-.content{
-  background-color: darkcyan;
-  max-width: fit-content;
-  margin:0 auto;
-  border-radius: 15px;
-  opacity:93%;
-}
+
 
 #title {
   max-width:600px;
@@ -77,7 +74,7 @@ max-width:100%;
   height: auto;
   padding: 0 20px;
   border-radius:5px;
-  font-size: 20px;
+  
   
 }
 .about-you{
@@ -91,6 +88,7 @@ max-width:100%;
   height:auto;
   padding: 5px 0;
   
+  
 }
 .form-group-button{
   max-width: 500px;
@@ -100,17 +98,23 @@ max-width:100%;
 }
 
 .form-group-heading{
-    text-align:left;
+    text-align:center;
+    border-top: lightgray solid 1px;
+    border-bottom: lightgray solid 1px;
+    font-style:italic;
+    margin: 3em 0;
+    font-size:125%;
+    padding:.5em;
     
-
 }
+
 
 .form-control{
   text-transform: none;
-    font-size:18px;
+    
     width: 100%;
     height: 30px;
-    box-sizing: border-box;
+    
     border: 1px solid ;
     border-radius:.25rem;
     border-color:transparent;
@@ -122,6 +126,7 @@ label{
     display:flex;
     margin-bottom: 0.5rem;
     align-items: center;
+    font-size:90%;
 }
 
 
@@ -136,13 +141,14 @@ label{
     margin-right: 0.75rem
 }
 
-textarea{background-color:lightgray;
+textarea{
+  background-color:lightgray;
   color:black;
-  font-size:16px;
+  text-transform: none;
     display: block;
     width: 100%;
     height: 150px;
-    box-sizing: border-box;
+    padding:.75em;
     border: 1px solid ;
     border-radius:.25rem;
     border-color:white;
@@ -151,7 +157,7 @@ textarea{background-color:lightgray;
 button{
     
     padding:10px;
-    font-size:16px;
+    
     font-family: inherit;
     border: 1px solid ;
     border-radius:.25rem;
@@ -170,15 +176,4 @@ button:active{
     opacity:50%;
 }
 
-textarea{
-  text-transform: none;
-}
 
-@media (max-width: 400px) {
-  
-  .content{
-    font-size:75%;
-  }
-  
-  
-}
