@@ -17,6 +17,8 @@ body{
   border-radius:10px;
 }
 
+
+
 #main::before{
 
   content: '';
@@ -24,14 +26,16 @@ body{
   left: 0;
   right: 0;
   z-index: -1;
-
-  display: block;
+  display: flex;
   background-image: url(../images/alcohol.jpg);
-  background-size: cover;
+  background-size:cover;
+  background-position:70%;
+  background-repeat: no-repeat;
   background-color: rgba(0,0,0,.65);
   background-blend-mode: multiply;
-  width: 100vw;
-  height: 100vh;
+  height:100%;
+  width:100%;
+
 
 
 
@@ -52,12 +56,7 @@ body{
 
 
 
-.container{
-  padding:20px;
-  
-  
-  
-}
+
 
 
 
@@ -79,13 +78,7 @@ body{
   
 }
 
-#image{
-    display:block;
-    max-width:100px;
-    height:auto;
-    margin: 15px auto;
 
-}
 #survey-form {
   
   text-align: center;
@@ -195,5 +188,8 @@ button:hover{
 button:active{
     opacity:50%;
 }
+
+
+
 
 
