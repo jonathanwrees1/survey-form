@@ -104,6 +104,8 @@ body{
   
 }
 
+
+
 fieldset{
   border:none;
 }
@@ -159,7 +161,7 @@ label{
     margin-right: 0.75rem
 }
 
-textarea{
+#comment-text{
   background-color:lightgray;
   color:black;
   text-transform: none;
