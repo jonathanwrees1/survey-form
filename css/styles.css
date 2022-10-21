@@ -103,6 +103,11 @@ body{
   
   
 }
+
+fieldset{
+  border:none;
+}
+
 .form-group-button{
   max-width: 500px;
   height:auto;
